@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magic 8-Balls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/JavaScript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadBody()">
+
+    <!-- loader -->
+   
+    <div class="hed" style="padding: 1%; ">
+        <h1 style="text-align: center; font-family: 'Overpass', sans-serif; color: white;">Magic <span
+                id="eigth">8</span> ball</h1>
+    </div>
+    <div class="container">
+        <h1 style="color: white; font-family: 'Overpass', sans-serif;">Hi, <span id="user_name"> There!</span></h1>
+    </div>
+    <div class="container" id="div2">
+        <h1>
+            Here are few questions on the basis of which I can predict the
+            future.<br>Choose to get your prediction</h1>
+    </div>
+
+
+    <div class="container mt-5" id="div3">
+        <h3 id="question_">When will my Goa plan be successful?</h3>
+
+        <button type="button" id="Show_answer" class="btn btn-secondary" onclick="showAnswer()">Show Answer</button>
+        <button type="button" id="Next_question" class="btn btn-secondary" onclick="showQuestion()">Next
+            Question</button>
+        <a href="index.html"><button type="button" class="btn btn-danger" onclick="quit_">Exit</button></a>
+        <div id="loader" style="display:none;" >Analyzing...<div class="loader"></div></div>
+        <div id="answer_1">
+        <h3 id="answer_">
+
+        </h3>
+    </div>
+    </div>
+
+
+
+    <div class="container" id="div1">
+        <h1 style="font-family: 'Overpass', sans-serif; color: white;">Thank you for visiting<img src="images/801.png" ></h1>
+    </div>
+
+
+  
+
+
+
+</body>
+
+</html>
